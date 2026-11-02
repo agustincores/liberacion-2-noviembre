@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Liberación del 2 de noviembre</title>
+  <style>
+    :root {
+      --bg: #f6f5f2;
+      --paper: #fff;
+      --ink: #1c1917;
+      --muted: #57534e;
+      --line: #e7e5e4;
+      --danger: #b91c1c;
+      --danger-bg: #fef2f2;
+      --warning: #a16207;
+      --warning-bg: #fffbeb;
+      --ok: #166534;
+      --ok-bg: #f0fdf4;
+      --info: #1d4ed8;
+      --info-bg: #eff6ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 16px/1.45 "Segoe UI", system-ui, sans-serif;
+    }
+    main { max-width: 980px; margin: 0 auto; padding: 32px 20px 64px; }
+    h1 { font-size: 28px; line-height: 1.2; margin: 0 0 8px; }
+    h2 { font-size: 18px; margin: 0 0 8px; }
+    p { margin: 0; }
+    .lead { color: var(--muted); max-width: 72ch; }
+    .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 24px 0; }
+    .stat { background: var(--paper); border: 1px solid var(--line); padding: 14px 16px; }
+    .stat b { display: block; font-size: 28px; letter-spacing: -0.03em; }
+    .stat span { color: var(--muted); font-size: 13px; }
+    .stat.info b { color: var(--info); }
+    .stat.ok b { color: var(--ok); }
+    .callout { background: var(--info-bg); border: 1px solid #bfdbfe; padding: 14px 16px; margin: 12px 0; }
+    .callout strong { display: block; margin-bottom: 6px; }
+    section { margin: 28px 0; }
+    .note { color: var(--muted); font-size: 14px; margin-bottom: 10px; }
+    .fine { color: var(--muted); font-size: 13px; margin-top: 8px; }
+    table { width: 100%; border-collapse: collapse; background: var(--paper); font-size: 14px; }
+    th, td { padding: 8px 10px; border-bottom: 1px solid var(--line); text-align: right; }
+    th:first-child, td:first-child { text-align: left; }
+    th { font-size: 12px; color: var(--muted); font-weight: 600; background: #fafaf9; }
+    tr.danger td { background: var(--danger-bg); }
+    tr.warning td { background: var(--warning-bg); }
+    tr.ok td { background: var(--ok-bg); }
+    @media (max-width: 800px) {
+      .stats { grid-template-columns: 1fr 1fr; }
+      table { display: block; overflow-x: auto; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Liberación del 2 de noviembre</h1>
+  <p class="lead">US103 y US104 ya están cerrados y en tránsito. El viejo es US103, 525 paquetes. El siguiente es US104, 782 en tránsito y 3 que siguen en Miami. El mueble hoy tiene 246 listos para retirar. El corte es de esta mañana.</p>
+
+  <div class="stats">
+    <div class="stat ok"><b>246</b><span>En el mueble ahora</span></div>
+    <div class="stat"><b>34%</b><span>Sucursal más llena, Galería</span></div>
+    <div class="stat"><b>525</b><span>Vuelo viejo, para hoy</span></div>
+    <div class="stat info"><b>782</b><span>Siguiente vuelo, en tránsito</span></div>
+  </div>
+
+  <div class="callout">
+    <strong>Hoy entra el vuelo viejo. Mañana no entra el siguiente</strong>
+    <p>Si US103 se libera hoy, las diez sucursales entran. Palma queda en 56 de 60 a la noche, después de los retiros del día. Si US104 sale mañana, no entran Galería (27), Matrix (27), Multiplaza (16), Luque (7), San Lorenzo (2), Villa Morra (42), Palma (21), Pinoza (31) y Sajonia (2). Si espera al miércoles, siguen sin entrar Villa Morra (31), Pinoza (24), Palma (11), Matrix (6) y Galería (3). El número entre paréntesis es cuántos paquetes se pasan del mueble.</p>
+  </div>
+
+  <section>
+    <h2>Ocupación de esta mañana</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Sucursal</th>
+          <th>Capacidad</th>
+          <th>Listos ahora</th>
+          <th>Ocupación</th>
+          <th>Con 15 días o más</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="ok"><td>Paseo La Galería</td><td>200</td><td>68</td><td>34%</td><td>30</td></tr>
+        <tr class="ok"><td>La Matrix</td><td>190</td><td>25</td><td>13%</td><td>11</td></tr>
+        <tr class="ok"><td>Multiplaza</td><td>150</td><td>39</td><td>26%</td><td>11</td></tr>
+        <tr class="ok"><td>Lambaré</td><td>180</td><td>16</td><td>9%</td><td>5</td></tr>
+        <tr class="ok"><td>Luque</td><td>120</td><td>30</td><td>25%</td><td>7</td></tr>
+        <tr class="ok"><td>San Lorenzo</td><td>90</td><td>14</td><td>16%</td><td>9</td></tr>
+        <tr class="ok"><td>Villa Morra</td><td>75</td><td>21</td><td>28%</td><td>3</td></tr>
+        <tr class="ok"><td>Palma</td><td>60</td><td>17</td><td>28%</td><td>6</td></tr>
+        <tr class="ok"><td>Pinoza</td><td>60</td><td>9</td><td>15%</td><td>2</td></tr>
+        <tr class="ok"><td>Sajonia</td><td>60</td><td>7</td><td>12%</td><td>1</td></tr>
+      </tbody>
+    </table>
+    <p class="fine">Ninguna sucursal está en la alarma del 60%. De los 246, 85 llevan 15 días o más listos y 21 llevan más de un mes. El viernes 30 a la mañana había 347. Sajonia sigue en 60 a confirmar. Pinoza sigue en 60 hasta que abra el depósito de al lado.</p>
+  </section>
+
+  <section>
+    <h2>El mensaje del jueves 29 y el viernes 30</h2>
+    <p>El jueves 29 se retiraron 64 paquetes, contra 65 el jueves anterior. El viernes 30 se retiraron 49. El viernes anterior fueron 87, y 39 de esos habían quedado listos ese mismo día porque llegó un vuelo. Sin esos 39, el viernes anterior queda en 48. De los que ya llevaban 15 días o más, el jueves salieron 4 de 73 y el viernes 8 de 69. El viernes anterior habían salido 3 de 40. Los de más de un mes: ninguno el jueves, uno el viernes, ninguno el sábado y uno el domingo.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Día</th>
+          <th>Con 15 días o más</th>
+          <th>Se retiraron</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Jueves 22</td><td>44</td><td>4</td></tr>
+        <tr><td>Viernes 23</td><td>40</td><td>3</td></tr>
+        <tr><td>Jueves 29, mensaje</td><td>73</td><td>4</td></tr>
+        <tr><td>Viernes 30, mensaje</td><td>69</td><td>8</td></tr>
+        <tr><td>Sábado 31</td><td>81</td><td>4</td></tr>
+        <tr><td>Domingo 1</td><td>84</td><td>1</td></tr>
+      </tbody>
+    </table>
+    <p class="fine">El viernes, los de 15 a 30 días salieron al 15%, igual que los dos viernes anteriores. Esos 7 tenían 16, 16, 16, 16, 17, 17 y 24 días. De los 21 que llevan más de un mes se fueron 2 en cuatro días. Esta mañana hay 85 con 15 días o más: el miércoles 28 había 54, porque cumplieron esa edad más paquetes de los que se retiraron. La baja del total del sábado es la del vuelo que no llegó.</p>
+  </section>
+
+  <section>
+    <h2>Si el viejo sale hoy y el siguiente mañana o el miércoles</h2>
+    <p class="note">El pico de hoy es a la noche, cuando US103 queda listo, después de los retiros del día. La carga nueva se retira al 32% desde el día siguiente. El pico de mañana o del miércoles es la noche en que entra US104.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Sucursal</th>
+          <th>Capacidad</th>
+          <th>Hoy, solo el viejo</th>
+          <th>Mañana entra el siguiente</th>
+          <th>Miércoles entra el siguiente</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="danger"><td>Paseo La Galería</td><td>200</td><td>149 (75%)</td><td>227 (114%)</td><td>203 (102%)</td></tr>
+        <tr class="danger"><td>La Matrix</td><td>190</td><td>109 (57%)</td><td>217 (114%)</td><td>196 (103%)</td></tr>
+        <tr class="warning"><td>Multiplaza</td><td>150</td><td>101 (67%)</td><td>166 (111%)</td><td>148 (99%)</td></tr>
+        <tr class="warning"><td>Lambaré</td><td>180</td><td>77 (43%)</td><td>143 (79%)</td><td>128 (71%)</td></tr>
+        <tr class="warning"><td>Luque</td><td>120</td><td>75 (63%)</td><td>127 (106%)</td><td>113 (94%)</td></tr>
+        <tr class="warning"><td>San Lorenzo</td><td>90</td><td>48 (53%)</td><td>92 (102%)</td><td>83 (92%)</td></tr>
+        <tr class="danger"><td>Villa Morra</td><td>75</td><td>58 (77%)</td><td>117 (156%)</td><td>106 (141%)</td></tr>
+        <tr class="danger"><td>Palma</td><td>60</td><td>56 (93%)</td><td>81 (135%)</td><td>71 (118%)</td></tr>
+        <tr class="danger"><td>Pinoza</td><td>60</td><td>34 (57%)</td><td>91 (152%)</td><td>84 (140%)</td></tr>
+        <tr class="warning"><td>Sajonia</td><td>60</td><td>27 (45%)</td><td>62 (103%)</td><td>57 (95%)</td></tr>
+      </tbody>
+    </table>
+    <p class="fine">Aunque el vuelo viejo se sume encima del mueble de esta mañana, sin descontar los retiros de hoy, Palma queda en 58 de 60 y el resto entra. US104 tiene 11 paquetes sin sucursal de entrega y US103 tiene 8. Van repartidos con la mezcla de los que ya tienen sucursal. Tres paquetes de US104 siguen en Miami y no están en estos 782.</p>
+  </section>
+
+  <div class="callout">
+    <strong>Cómo liberar</strong>
+    <p>Hoy sale US103, los 525. Entra en las diez sucursales. Palma es la más justa: 56 de 60 a la noche. El siguiente no sale mañana. Sale el miércoles, y 75 paquetes de US104 se dejan para el jueves: Villa Morra 31, Pinoza 24, Palma 11, Matrix 6 y Galería 3. El mensaje del jueves y el viernes no vació el mueble viejo, así que el plan no cuenta con un retiro extra de esos 85 paquetes.</p>
+  </div>
+</main>
+</body>
+</html>
